@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>HTML - Div</title>
+    <style>
+        .mycontainer {
+            width: 100%;
+            overflow: auto;
+        }
+        .mycontainer div {
+            width: 33%;
+            float: left;
+        }
+        .container {
+            display: flex;
+        }
+        .container > div {
+            width: 33%;
+        }
+        .grid-container {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        }
+    </style>
+</head>
+<body>
+    <div class="mycontainer">
+    <div style="background-color: rosybrown;">
+        <h2>Indonesia</h2>
+        <p>Indonesia adalah negara dengan pemerintahan terbaik.</p>
+    </div>
+
+    <div style="background-color: lightcoral;">
+        <h2>Amerika</h2>
+        <p>Amerika adalah negara dengan pemerintahan terburuk.</p>
+    </div>
+    <div style="background-color: lightgoldenrodyellow;">
+        <h2>Inggris</h2>
+        <p>Inggris adalah negara dengan pemerintahan terlucu.</p>
+    </div>
+    </div>
+    <br>
+    <div class="container">
+        <div style="background-color: rosybrown;">
+            <h2>Indonesia</h2>
+            <p>Indonesia adalah negara dengan pemerintahan terbaik.</p>
+        </div>
+    
+        <div style="background-color: lightcoral;">
+            <h2>Amerika</h2>
+            <p>Amerika adalah negara dengan pemerintahan terburuk.</p>
+        </div>
+        <div style="background-color: lightgoldenrodyellow;">
+            <h2>Inggris</h2>
+            <p>Inggris adalah negara dengan pemerintahan terlucu.</p>
+        </div>
+        </div>
+        <br>
+        <div class="grid-container">
+            <div style="background-color: rosybrown;">
+                <h2>Indonesia</h2>
+                <p>Indonesia adalah negara dengan pemerintahan terbaik.</p>
+            </div>
+        
+            <div style="background-color: lightcoral;">
+                <h2>Amerika</h2>
+                <p>Amerika adalah negara dengan pemerintahan terburuk.</p>
+            </div>
+            <div style="background-color: lightgoldenrodyellow;">
+                <h2>Inggris</h2>
+                <p>Inggris adalah negara dengan pemerintahan terlucu.</p>
+            </div>
+            </div>
+</body>
+</html>

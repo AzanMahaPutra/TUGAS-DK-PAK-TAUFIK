@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Classes</title>
+    <style>
+        .city {
+            background-color: tomato;
+            color: white;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+        .note {
+            font-size: 120%;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="city">
+    <div>
+        <h2>Indonesia</h2>
+        <p>Indonesia adalah negara dengan pemerintahan terbaik.</p>
+    </div>
+    <div>
+        <h2>Amerika</h2>
+        <p>Amerika adalah negara dengan pemerintahan terburuk.</p>
+    </div>
+    <div>
+        <h2>Inggris</h2>
+        <p>Inggris adalah negara dengan pemerintahan terlucu.</p>
+    </div>
+    </div>
+    <br><br>
+    <h1>My <span class="note">Kisah</span>Hesding</h1>
+    <p>Ini tulisan <span class="note">Spontan</span>Uhuyy</p>
+    <br><br>
+    <h2 class="city">Indonesia</h2>
+    <p>Indonesia adalah negara dengan pemerintahan terbaik.</p>
+    <h2 class="city">Amerika</h2>
+    <p>Amerika adalah negara dengan pemerintahan terburuk.</p>
+    <h2 class="city">Inggris</h2>
+    <p>Inggris adalah negara dengan pemerintahan terlucu.</p>
+    <br><br>
+    <h2 class="city main">Indonesia</h2>
+    <h2 class="city">Amerika</h2>
+    <h2 class="city">Inggris</h2>
+    <br><br>
+    <h2 class="city">Indonesia</h2>
+    <p class="city">Indonesia adalah negara dengan pemerintahan terbaik.</p>
+    <br>
+    <button onclick="myFunction()">Sembunyikan elements</button>
+    <script>
+        function myFunction() {
+          var x = document.getElementsByClassName("city");
+          for (var i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+        }
+        </script>
+
+</body>
+</html>

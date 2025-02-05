@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - JavaScript</title>
+</head>
+<body>
+    <p id="masukkan"></p>
+    <h1 id="cihuyy">Hai JavaScript!</h1>
+    <img id="myImage" src="Foto-formal.jpg" width="200" height="200">
+    <p>
+        <button type="button" onclick="light(0)">Sigma On</button>
+        <button type="button" onclick="light(1)">Sigma Off</button>
+    </p>
+    
+    <script>
+        document.getElementById("masukkan").innerHTML = "Hai JavaScript!";
+        
+        document.getElementById("cihuyy").style.fontSize = "25px";
+        document.getElementById("cihuyy").style.color = "red";
+        document.getElementById("cihuyy").style.backgroundColor = "yellow";
+        function light(sw) {
+        var pic;
+        if (sw == 0) {
+        pic = "foto-formal.jpg"
+        } else {
+        pic = "foto-formal2.jpg"
+        }
+        document.getElementById('myImage').src = pic;
+        }
+    </script>
+
+    <noscript>Maaf, browser milik anda tidak support JavaScript</noscript>
+</body>
+</html>

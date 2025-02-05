@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            background: #f1f1f1;
+            padding: 20px;
+        }
+
+        article {
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: #f1f1f1;
+            height: 300px;
+        }
+
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            nav, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>My Country</h2>
+    </header>
+
+    <section>
+        <nav>
+            <ul>
+                <li><a href="#">Indonesia</a></li>
+                <li><a href="#">Amerika</a></li>
+                <li><a href="#">Inggris</a></li>
+            </ul>
+        </nav>
+        
+        <article>
+            <h1>Indonesia</h1>
+            <p>Indonesia adalah salah satu negara di asian,presiden yang sekarang adalah bapak Prabowo Subianto</p>
+        </article>
+
+        <footer>
+            <p>This is Footer</p>
+        </footer>
+</body>
+</html>
